@@ -59,7 +59,7 @@ class _AddNoteState extends State<AddNote> {
                       child: const Text(
                         'Cancel',
                         style: TextStyle(
-                          fontSize: 15.0,
+                          fontSize: 20.0,
                           color: Colors.black87,
                         ),
                       ),
