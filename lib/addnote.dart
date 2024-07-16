@@ -24,8 +24,8 @@ class _AddNoteState extends State<AddNote> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            margin: EdgeInsets.all(15.0),
-            padding: EdgeInsets.all(10.0),
+            margin: const EdgeInsets.all(15.0),
+            padding: const EdgeInsets.all(10.0),
             decoration: BoxDecoration(
               color: Colors.deepPurple[50],
               // border: BoxBorder(),
@@ -36,15 +36,15 @@ class _AddNoteState extends State<AddNote> {
                 // const Text(
                 //   'Title',
                 // ),
-                SizedBox(height: 15.0,),
+                const SizedBox(height: 15.0,),
                 TextField(
                   controller: controltext,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     hintText: 'Note',
                   ),
                 ),
-                SizedBox(height: 15.0,),
+                const SizedBox(height: 15.0,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -56,23 +56,29 @@ class _AddNoteState extends State<AddNote> {
                       style: TextButton.styleFrom(
                         backgroundColor: Colors.grey[300],
                       ),
-                      child: Text(
+                      child: const Text(
                         'Cancel',
+                        style: TextStyle(
+                          fontSize: 15.0,
+                          color: Colors.black87,
+                        ),
                       ),
                     ),
 
                     TextButton(
                       onPressed: () {
-                        // print(controltext.text);
                         store_task.add(Task(note:controltext.text));
-                        // newTask.note = controltext.text;
                         Navigator.pop(context);
                       },
                       style: TextButton.styleFrom(
                         backgroundColor: Colors.grey[300],
                       ),
-                      child: Text(
+                      child: const Text(
                         'Save',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.black87,
+                        ),
                       ),
                     ),
                   ],
@@ -80,7 +86,6 @@ class _AddNoteState extends State<AddNote> {
               ],
             ),
           ),
-
         ],
       )
     );
