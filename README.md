@@ -1,7 +1,9 @@
-# world
+# TODO
 
 This flutter TODO app still does not support storing user data locally. HIVE will be used to store the data of the user.
 After adding a note use refresh button to get the updated home page.
+
+This project was initially named 'world' so in the library directory make sure to change name of the import files accordingly.
 
 ## Getting Started
 
